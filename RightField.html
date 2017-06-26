@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <body>
-  Maribel="This is my grandmother Maribel. She is truely amazing, i love spending time with her, she is absolutly hilarious."
-  Popop="Steph is breaking stuff"
+ 
   <script>
+   
+ 
     function showtext(demo, description) {
       document.getElementById(demo).innerHTML = description;
     }
@@ -12,10 +13,10 @@
     }
   </script>
   
-<img src= "guela.jpg" width="250" height="250" onmouseover="showtext(Maribel)" onmouseout="hidetext("demo")" >
+<img src= "guela.jpg" width="250" height="250" onmouseover="showtext("demo", "This is my grandmother Maribel. She is truely amazing, i love spending time with her, she is absolutly hilarious.)" onmouseout="hidetext("demo")" >
 <p id="demo"></p>
   
-  <img src= "popop.jpg" width="250" height="250" align="middle" onmouseover="showtext(Popop)" onmouseout="hidetext("demo2")" >
+  <img src= "popop.jpg" width="250" height="250" align="middle" onmouseover="showtext("demo2", "Popop")" onmouseout="hidetext("demo2")" >
   <p id="demo2" style="text-align: center"></p>
   </body>
 </html>
