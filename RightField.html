@@ -1,16 +1,21 @@
 <!DOCTYPE html>
 <html>
 <body>
+  Maribel="This is my grandmother Maribel. She is truely amazing, i love spending time with her, she is absolutly hilarious."
+  Popop="Steph is breaking stuff"
   <script>
-    function showtext() {
-      document.getElementById("demo").innerHTML = " This is my grandmother Maribel. She is truely amazing, i love spending time with her, she is absolutly hilarious.";
+    function showtext(demo, description) {
+      document.getElementById(demo).innerHTML = description;
     }
-    function hidetext() {
-      document.getElementById("demo").innerHTML = "";
+    function hidetext(demo) {
+      document.getElementById(demo).innerHTML = "";
     }
   </script>
   
-<img src= "guela.jpg" width="200" height="200" onmouseover="showtext()" onmouseout="hidetext()" >
+<img src= "guela.jpg" width="250" height="250" onmouseover="showtext(Maribel)" onmouseout="hidetext("demo")" >
 <p id="demo"></p>
+  
+  <img src= "popop.jpg" width="250" height="250" align="middle" onmouseover="showtext(Popop)" onmouseout="hidetext("demo2")" >
+  <p id="demo2" style="text-align: center"></p>
   </body>
 </html>
